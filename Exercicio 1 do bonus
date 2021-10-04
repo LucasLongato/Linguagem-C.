@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<stdlib.h>
+ 
+int main(){
+    float km, valor_A, redimento_A, valor_GC, redimento_GC, redimento_GA, valor_GA;
+    printf("ola seja bem vindo vamos sem bora nessa viajem juntos");
+    printf("Qual a quilometragem que vc deseja rodar");
+    scanf("%d", &km);
+    if (km>0){
+        valor_A= km * 4,65;
+        redimento_A= valor_A/8;
+        valor_GC= km * 5,65;
+        redimento_GC= valor_GC/10;
+        valor_GA= km * 6,01;
+        redimento_GA= valor_GA/10,5;
+    }
+    printf("\nVamos ver qual e a melhor  opçao de combustivel que você pode usar a te seu proximo destino");
+    printf("\nAlcool", valor_A, "O preço (R$:5,65)", redimento_A, "Redimento");
+    printf("\nGasolina comum R$:", valor_GC, "O preço(R$:5,65)", redimento_GC, "Redimento");
+    printf("\nGasolina aditivada R$:", valor_GA, "O preço(R$:6,01)", redimento_GA, "Redimento");
+
+}
